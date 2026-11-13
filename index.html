@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Атлас — гастрокофейня в Туле</title>
+<meta name="description" content="Гастрокофейня «Атлас» в Туле: кофе, авторский чай, завтраки весь день и супы. Советская ул., 17. Вс–Чт 09:00–22:00, Пт–Сб 09:00–23:00.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Атлас — гастрокофейня в Туле">
+<meta property="og:description" content="Гастрокофейня «Атлас» в Туле: кофе, авторский чай, завтраки весь день и супы. Советская ул., 17. Вс–Чт 09:00–22:00, Пт–Сб 09:00–23:00.">
+<meta property="og:url" content="https://atlas-tula.ru/">
+<meta property="og:image" content="https://atlas-tula.ru/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Атлас","url":"https://atlas-tula.ru/","telephone":"+7 930 099-87-88","address":{"@type":"PostalAddress","streetAddress":"Советская ул., 17","addressLocality":"Тула","addressCountry":"RU"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"09:00","closes":"23:00"}]}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2314263A'/%3E%3Cpath d='M32 8l6 24-6 24-6-24z' fill='%23B5502F'/%3E%3Cpath d='M8 32l24-6 24 6-24 6z' fill='%23E3C98F'/%3E%3C/svg%3E">
+<script>
+/* анимации включаем сразу; если основной скрипт не запустился — показываем всё как есть */
+document.documentElement.classList.add('js');
+setTimeout(function(){if(!window.__ok)document.documentElement.classList.remove('js')},4000);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F3EEE2; --milk:#FBF8F0; --sand:#E8DFC9; --line:#D9CDB0;
+  --green:#2F6F73; --green-d:#14263A; --green-dd:#0C1826; --green-l:#D5E0EA;
+  --accent:#B5502F; --accent-d:#8F3D20; --accent-l:#E3C98F; --ink:#1D2530; --muted:#5E6672; --cof:#0F1B2A;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+  --r:24px; --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:70px}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.6;font-size:16px;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:80px 0;position:relative}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;color:var(--green-d)}
+h2{font-size:clamp(38px,7vw,64px);margin-bottom:16px;letter-spacing:-.01em}
+h2 em{font-style:italic;color:var(--accent)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-d);font-weight:700;margin-bottom:16px}
+.eyebrow::before{content:"";width:28px;height:1.5px;background:currentColor}
+.lead{color:var(--muted);max-width:560px;font-size:17px}
+.cap{display:inline-block;font-size:11px;color:var(--muted);opacity:.8;letter-spacing:.02em}
+.cap::before{content:"◦ "}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px;border:1.5px solid transparent;transition:transform .3s var(--ease),background .25s,color .25s,box-shadow .3s;min-height:50px}
+.btn::after{content:"";position:absolute;top:0;left:0;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:translateX(-160%) skewX(-18deg);transition:transform .7s var(--ease)}
+.btn:hover::after{transform:translateX(260%) skewX(-18deg)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(12,24,38,.22)}
+.btn:active{transform:translateY(-1px)}
+.btn-main{background:var(--green-d);color:var(--milk)}
+.btn-main:hover{background:var(--green)}
+.btn-line{border-color:var(--green-d);color:var(--green-d)}
+.btn-line:hover{background:var(--green-d);color:var(--milk)}
+.btn-warm{background:var(--accent);color:#fff}
+.btn-warm:hover{background:var(--accent-d)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff;background:rgba(255,255,255,.08);backdrop-filter:blur(4px)}
+.btn-ghost:hover{background:#fff;color:var(--green-d)}
+
+/* progress + header */
+.prog{position:fixed;top:0;left:0;right:0;height:3px;z-index:60;background:linear-gradient(90deg,var(--accent),#E3C98F);transform:scaleX(0);transform-origin:left;pointer-events:none}
+header.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s,box-shadow .4s,border-color .4s;border-bottom:1px solid transparent}
+header.nav.sc{background:rgba(15,27,42,.95);backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(0,0,0,.3);border-color:rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--serif);font-size:30px;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.01em;transition:color .3s}
+.nav.sc .logo{color:#fff}
+.logo{display:inline-flex;align-items:center}
+.logo-svg{display:block;height:24px;width:auto}
+@media (min-width:900px){.logo-svg{height:28px}}
+.nav nav{display:none;gap:30px;font-size:14px;font-weight:600}
+.nav nav a{position:relative;text-decoration:none;color:rgba(255,255,255,.88);transition:color .25s}
+.nav nav a:hover{color:#fff}
+.nav.sc nav a{color:rgba(255,255,255,.75)}
+.nav.sc nav a:hover{color:#fff}
+.nav.sc nav a.act{color:#fff}
+.nav .right{display:flex;align-items:center;gap:14px}
+.nav .tel{display:none;font-size:14px;font-weight:700;text-decoration:none;color:#fff;transition:color .3s}
+.nav.sc .tel{color:#fff}
+.burger{width:46px;height:46px;border:1px solid rgba(255,255,255,.45);border-radius:14px;background:rgba(255,255,255,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;transition:background .3s,border-color .3s}
+.nav.sc .burger{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.08)}
+.burger i{display:block;width:20px;height:2px;background:#fff;border-radius:2px;transition:transform .35s var(--ease),opacity .25s,background .3s}
+.nav.sc .burger i{background:#fff}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0;transform:scaleX(0)}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:899px){
+  .nav nav{display:flex;flex-direction:column;position:absolute;top:100%;left:12px;right:12px;margin-top:8px;background:var(--cream);border-radius:22px;box-shadow:0 20px 50px rgba(12,24,38,.25);padding:8px 22px;visibility:hidden;opacity:0;transform:translateY(-14px) scale(.97);transform-origin:top right;transition:opacity .3s,transform .4s var(--ease),visibility 0s .4s}
+  .nav nav.open{visibility:visible;opacity:1;transform:none;transition-delay:0s}
+  .nav nav a,.nav.sc nav a{color:var(--green-d);padding:14px 0;font-size:17px;border-bottom:1px solid var(--line);opacity:0;transform:translateX(-14px);transition:opacity .4s,transform .5s var(--ease)}
+  .nav nav a:last-child{border-bottom:0}
+  .nav nav.open a{opacity:1;transform:none;transition-delay:calc(var(--i)*55ms + 80ms)}
+}
+
+.soc{display:flex;gap:8px}
+.soc a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.4);display:grid;place-items:center;color:#fff;transition:background .25s,color .25s,border-color .25s}
+.soc a:hover{background:#fff;color:var(--cof);border-color:#fff}
+.soc svg{width:18px;height:18px}
+.logo{letter-spacing:.12em;text-transform:uppercase;font-size:26px}
+/* back to top */
+.up{position:fixed;right:16px;bottom:16px;z-index:45;width:50px;height:50px;border-radius:50%;border:0;background:var(--accent);color:#fff;box-shadow:0 10px 26px rgba(12,24,38,.3);cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(16px) scale(.8);pointer-events:none;transition:opacity .35s,transform .45s var(--ease),background .2s}
+.up.show{opacity:1;transform:none;pointer-events:auto}
+.up:hover{background:var(--green-d);transform:translateY(-4px)}
+.up svg{width:22px;height:22px}
+
+/* open badge */
+.now{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.3);color:#fff;white-space:nowrap}
+.now::before{content:"";width:9px;height:9px;border-radius:50%;background:#6FD08A;box-shadow:0 0 0 0 rgba(111,208,138,.7);animation:pulse 2s infinite}
+.now.off::before{background:#C9BFAE;animation:none}
+.now:empty{display:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(111,208,138,.7)}70%{box-shadow:0 0 0 10px rgba(111,208,138,0)}100%{box-shadow:0 0 0 0 rgba(111,208,138,0)}}
+
+/* ===== hero ===== */
+.hero{padding:0;min-height:100vh;min-height:100svh;height:auto;display:flex;align-items:center;overflow:hidden;background:var(--cof);color:#fff}
+.hero-bg{position:absolute;inset:0;overflow:hidden}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;transform-origin:62% 50%;animation:kb 26s ease-in-out infinite alternate;will-change:transform}
+@keyframes kb{from{transform:scale(1) translate3d(0,0,0)}to{transform:scale(1.22) translate3d(-2.5%,-1.5%,0)}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,15,24,.62) 0%,rgba(8,15,24,.3) 38%,rgba(8,15,24,.82) 100%),linear-gradient(90deg,rgba(8,15,24,.55),transparent 70%)}
+.hero-in{position:relative;z-index:2;padding-top:110px;padding-bottom:150px;will-change:transform,opacity}
+.hero .eyebrow{color:var(--accent-l);opacity:0;animation:rise .9s var(--ease) .15s forwards}
+.hero h1{font-size:clamp(64px,19vw,190px);color:#fff;letter-spacing:-.02em;line-height:.95;margin-bottom:18px;text-shadow:0 6px 40px rgba(0,0,0,.35)}
+.ch{display:inline-block;opacity:0;transform:translateY(70%) rotate(6deg);animation:chIn 1s var(--ease) forwards;animation-delay:calc(.35s + var(--i)*80ms)}
+.hero h1 .it{font-style:italic;color:var(--accent-l)}
+@keyframes chIn{to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.slogan{font-size:clamp(18px,4.6vw,24px);max-width:520px;margin-bottom:22px;color:rgba(255,255,255,.92);opacity:0;animation:rise 1s var(--ease) 1.2s forwards}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:30px;font-size:15px;color:rgba(255,255,255,.9);opacity:0;animation:rise 1s var(--ease) 1.4s forwards}
+.cta{display:flex;flex-wrap:wrap;gap:12px;opacity:0;animation:rise 1s var(--ease) 1.6s forwards}
+.scrollhint{position:absolute;z-index:3;left:50%;bottom:62px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85);text-decoration:none;opacity:0;animation:rise 1s var(--ease) 2.1s forwards}
+.scrollhint i{display:block;width:24px;height:40px;border:1.5px solid rgba(255,255,255,.7);border-radius:14px;position:relative}
+.scrollhint i::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:8px;margin-left:-1.5px;border-radius:3px;background:#fff;animation:wheel 1.8s ease-in-out infinite}
+@keyframes wheel{0%{transform:translateY(0);opacity:1}80%{transform:translateY(14px);opacity:0}100%{opacity:0}}
+
+.h1x{font-size:inherit;margin-bottom:34px;text-shadow:0 6px 40px rgba(0,0,0,.35);font-weight:500}
+.h1a{display:block;font-size:clamp(54px,14vw,128px);letter-spacing:.06em;text-transform:uppercase;line-height:1;color:#fff;opacity:0;animation:rise 1s var(--ease) .2s forwards}
+.h1a .dash{font-weight:400;letter-spacing:0}
+.h1b{display:block;margin-top:18px;font-size:clamp(30px,6.4vw,58px);line-height:1.12;color:#fff;max-width:13em;opacity:0;animation:rise 1s var(--ease) .6s forwards}
+.h1b em{font-style:italic}
+.cta{animation-delay:1s}
+/* strip text band */
+.band{background:var(--green-d);color:var(--green-l);padding:20px 0;overflow:hidden;white-space:nowrap}
+.band-track{display:inline-flex;animation:slide 38s linear infinite;will-change:transform}
+.band span{font-family:var(--serif);font-style:italic;font-size:clamp(24px,4vw,36px);padding:0 22px}
+.band span.s{color:var(--accent-l);font-style:normal;padding:0}
+@keyframes slide{to{transform:translateX(-50%)}}
+@keyframes slide4{to{transform:translateX(-25%)}}
+
+/* ===== about ===== */
+.about{background:var(--milk);overflow:hidden}
+.about-grid{display:grid;gap:56px}
+.about p{color:#3e4652}
+.about-t{font-size:clamp(18px,2.2vw,22px);line-height:1.55;max-width:34em}
+.about p+p{margin-top:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}
+.stat{border-top:2px solid var(--green-d);padding-top:12px}
+.stat strong{display:block;font-family:var(--serif);font-size:clamp(44px,9vw,62px);line-height:1;color:var(--accent-d);font-weight:600}
+.stat span{display:block;font-size:13px;color:var(--muted);line-height:1.35;margin-top:6px}
+.award{display:inline-flex;align-items:center;gap:10px;margin-top:24px;background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:8px 18px 8px 10px;font-size:14px;font-weight:600;color:var(--green-d)}
+.award b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-size:15px}
+.collage{position:relative;min-height:440px}
+.fr{position:absolute;border-radius:var(--r);overflow:hidden;box-shadow:0 30px 60px rgba(8,15,24,.22);background:var(--sand)}
+.fr .pi{position:absolute;left:0;width:100%;top:-12%;height:124%;object-fit:cover;will-change:transform}
+.fr1{left:0;top:0;width:68%;aspect-ratio:4/5}
+.fr2{right:0;bottom:0;width:50%;aspect-ratio:1/1;border:6px solid var(--milk)}
+.collage .cap{position:absolute;left:0;bottom:-4px}
+.vibes{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.vibe{background:var(--sand);border-radius:999px;padding:9px 18px;font-size:14px;font-weight:600;color:var(--green-d);transition:transform .3s var(--ease),background .3s,color .3s}
+.vibe:hover{transform:translateY(-3px) rotate(-1.5deg);background:var(--green-d);color:#fff}
+
+/* ===== gallery ===== */
+.gallery{background:var(--cof);color:#E4EAF1;padding-bottom:0}
+.mosaic6{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:36px}
+.mosaic6 .tile{aspect-ratio:3/4}
+.mosaic6 .tile img{height:100%}
+@media (min-width:900px){.mosaic6{grid-template-columns:repeat(3,1fr);gap:14px}}
+.gallery h2{color:#F3EEE2;font-weight:500}
+.gallery h2 em{color:#F3EEE2}
+.gallery .eyebrow{color:var(--accent-l)}
+.gallery .cap{color:#AEBBCA}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:10px;margin-top:36px}
+.tile{position:relative;overflow:hidden;border-radius:18px;background:#1c2f45}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.tile:hover img{transform:scale(1.12)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 14px;background:linear-gradient(0deg,rgba(8,15,24,.8),transparent);font-family:var(--serif);font-size:24px;color:#fff;font-style:italic;transform:translateY(60%);opacity:0;transition:transform .5s var(--ease),opacity .4s}
+.tile:hover figcaption{transform:none;opacity:1}
+.k1{grid-column:1;grid-row:1/3}.k2{grid-column:2;grid-row:1}.k3{grid-column:2;grid-row:2}
+.k4{grid-column:1/3;grid-row:3}.k5{grid-column:1/3;grid-row:4}
+.strip{margin-top:60px;padding:0 0 70px;overflow:hidden;cursor:grab;touch-action:pan-y}
+.strip::-webkit-scrollbar{display:none}
+.strip.drag{cursor:grabbing}
+.strip-track{display:flex;gap:16px;width:max-content;will-change:transform;backface-visibility:hidden}
+.strip img{height:230px;width:auto;border-radius:16px;flex:none;transition:transform .5s var(--ease),filter .4s;filter:saturate(.9)}
+.strip img:hover{transform:scale(1.04);filter:saturate(1.15)}
+
+/* ===== evening ===== */
+.evening{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:110px 0 0;overflow:hidden;background:#0b141f}
+.eve-bg{position:absolute;inset:0}
+.eve-bg img{width:100%;height:100%;object-fit:cover}
+.eve-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,15,24,.55),rgba(8,15,24,.15) 45%,rgba(8,15,24,.75))}
+.eve-in{position:relative;z-index:2}
+.evening h2{color:#fff;font-size:clamp(44px,9vw,96px);font-weight:500}
+.evening h2 em{color:#fff}
+.eve-strip{position:relative;z-index:2;overflow:hidden;cursor:grab;touch-action:pan-y;padding:0 0 28px;margin-top:40px}
+.eve-strip::-webkit-scrollbar{display:none}
+.eve-strip.drag{cursor:grabbing}
+.eve-track{display:flex;gap:12px;width:max-content;will-change:transform;backface-visibility:hidden}
+.eve-track img{height:170px;width:auto;aspect-ratio:3/4;object-fit:cover;border-radius:14px;opacity:.92}
+@media (min-width:900px){.eve-track img{height:210px}}
+/* ===== menu ===== */
+.mcat{font-family:var(--sans);font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--milk);background:var(--green-d);display:inline-block;padding:10px 22px;border-radius:999px;margin:6px 0 18px}
+.mgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:8px}
+@media (min-width:640px){.mgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1000px){.mgrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}}
+.mi{background:var(--milk);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s}
+.mi:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(12,24,38,.14)}
+.mi img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.mi-t{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:12px 14px 14px}
+.mi-t span{font-weight:600;font-size:15px;line-height:1.3}
+.mi-t b{font-family:var(--serif);font-size:22px;color:var(--accent-d);white-space:nowrap}
+.menu-grid>*{min-width:0}
+.menu-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:16/10;background:var(--sand);box-shadow:0 30px 60px rgba(8,15,24,.18)}
+.menu-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.12);transition:opacity .8s,transform 1.6s var(--ease)}
+.menu-photo img.on{opacity:1;transform:scale(1)}
+.menu-photo .cap{position:absolute;left:14px;bottom:10px;color:#fff;background:rgba(0,0,0,.35);padding:2px 10px;border-radius:999px;opacity:1}
+.tabs{display:flex;gap:8px;margin:0 0 22px;overflow-x:auto;padding:2px 2px 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:inherit;font-weight:600;font-size:14px;padding:11px 20px;border-radius:999px;border:1.5px solid var(--line);background:var(--milk);color:var(--muted);cursor:pointer;min-height:46px;transition:background .3s,color .3s,border-color .3s,transform .3s var(--ease)}
+.tab:hover{transform:translateY(-2px);border-color:var(--green)}
+.tab[aria-selected="true"]{background:var(--green-d);border-color:var(--green-d);color:var(--milk)}
+.panel{background:var(--milk);border:1px solid var(--line);border-radius:var(--r);padding:10px 24px}
+.panel[hidden]{display:none}
+.panel.on .item,.panel.on .more,.panel.on .chips span{animation:rise .7s var(--ease) both;animation-delay:calc(var(--i,0)*70ms)}
+.item{display:flex;align-items:baseline;gap:12px;padding:16px 0;border-bottom:1px dashed var(--line);transition:padding .3s var(--ease),background .3s}
+.item:hover{padding-left:10px}
+.item:hover .p{color:var(--green-d)}
+.item .n{font-weight:600}
+.item .nm{flex:1}
+.item .p{font-family:var(--serif);font-size:24px;color:var(--accent-d);white-space:nowrap;font-weight:700;transition:color .3s}
+.more{padding:18px 0 14px}
+.more+.more{border-top:1px dashed var(--line)}
+.list .item:last-child{border-bottom:1px dashed var(--line)}
+.more-t{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-d);font-weight:700;margin-bottom:12px}
+.more-t small{display:block;text-transform:none;letter-spacing:0;font-weight:500;color:var(--muted);font-size:13px;margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:600;color:var(--green-d);line-height:1.3;transition:transform .3s var(--ease),background .3s,color .3s}
+.chips span:hover{transform:translateY(-3px);background:var(--green-d);color:#fff}
+@media (max-width:639px){.mi-t{flex-direction:column;align-items:flex-start;gap:2px}.mi-t b{font-size:20px}}
+.mpane.panel{background:none;border:0;padding:0;border-radius:0}
+.mpane{animation:mfade .45s var(--ease)}
+@keyframes mfade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.mi-d{padding:0 14px 14px;margin-top:-6px;font-size:13px;line-height:1.45;color:var(--muted)}
+.tabs{position:sticky;top:68px;z-index:5;background:var(--cream);padding:10px 2px;margin:0 -2px 18px;flex-wrap:nowrap}
+@media (min-width:900px){.tabs{flex-wrap:wrap;position:static}}
+.mwine{display:block;max-width:760px;margin:0 auto;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 40px rgba(12,24,38,.12)}
+.mwine img{width:100%;height:auto}
+.mkbju{max-width:560px;padding:32px;border-radius:24px;background:var(--milk);border:1px solid var(--line)}
+.mkbju p{color:var(--muted);margin-bottom:20px}
+.note{font-size:13px;color:var(--muted);margin-top:16px}
+.note a{color:var(--accent-d);font-weight:600}
+
+/* ===== coffee + milk ===== */
+.duo{padding:0;display:grid}
+@media (min-width:900px){.duo{grid-template-columns:1fr 1fr}}
+.duo-part{position:relative;min-height:88vh;display:flex;align-items:flex-end;padding:90px 0 60px;background:var(--bg) center/cover no-repeat #0b141f;color:#fff;overflow:hidden}
+.duo-part::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,15,24,.25),rgba(8,15,24,.82))}
+.duo-in{position:relative;z-index:2;padding:0 24px;max-width:560px}
+@media (min-width:900px){.duo-in{padding:0 48px}}
+.duo h2{color:#fff;font-size:clamp(36px,5vw,58px);font-weight:500}
+.duo h2 em{color:#fff}
+.duo p{color:rgba(255,255,255,.9);font-size:17px}
+.duo-ph{width:150px;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:16px;margin-top:22px;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+/* ===== reviews ===== */
+.reviews{background:var(--milk);overflow:hidden}
+.rev-head{display:grid;gap:26px;align-items:end}
+.rating{display:flex;align-items:center;gap:16px}
+.rating strong{font-family:var(--serif);font-size:clamp(80px,16vw,120px);line-height:.8;color:var(--accent-d);font-weight:600}
+.rating span{font-size:14px;color:var(--muted);line-height:1.4}
+.rating .stars{display:block;color:#E3C98F;font-size:20px;letter-spacing:3px;margin-bottom:4px}
+.slider{margin-top:38px;overflow:hidden;border-radius:var(--r)}
+.track{display:flex;transition:transform .9s var(--ease);will-change:transform}
+.slide{flex:0 0 100%;padding:2px}
+.card{height:100%;background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:34px 28px;opacity:.35;transform:scale(.97);transition:opacity .8s,transform .8s var(--ease)}
+.slide.cur .card{opacity:1;transform:none}
+.card .ic{width:44px;height:44px;color:var(--accent);margin-bottom:16px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:clamp(32px,6vw,44px);margin-bottom:12px}
+.card .q{font-family:var(--serif);font-size:clamp(26px,4.2vw,40px);line-height:1.2;color:var(--green-d);font-weight:500;max-width:760px}
+.card .by{margin-top:18px;font-size:15px;font-weight:600;color:var(--accent-d)}
+.card .stars{color:#C9A55A;font-size:18px;letter-spacing:3px;margin-bottom:14px}
+.card p{font-size:clamp(16px,2.4vw,19px);color:#3e4652;max-width:680px}
+.sl-ctl{display:flex;align-items:center;gap:14px;margin-top:20px}
+.dots{display:flex;gap:8px;flex:1}
+.dots button{width:10px;height:10px;border-radius:999px;border:0;background:var(--line);cursor:pointer;padding:0;transition:width .4s var(--ease),background .3s}
+.dots button.on{width:34px;background:var(--accent)}
+.arr{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--green-d);background:transparent;color:var(--green-d);cursor:pointer;display:grid;place-items:center;transition:background .25s,color .25s,transform .3s var(--ease)}
+.arr:hover{background:var(--green-d);color:#fff;transform:scale(1.08)}
+.arr svg{width:20px;height:20px}
+.src{font-size:13px;color:var(--muted);margin-top:18px}
+
+.ya-rev{margin-top:34px;max-width:760px;height:720px}
+.ya-rev iframe{display:block;width:100%;height:100%;border:1px solid var(--line);border-radius:var(--r);background:#fff}
+/* ===== акция ===== */
+.promo{padding:56px 0;background:url(images/c/akciya.jpg) center 36%/cover no-repeat #0b141f;color:#fff}
+.promo::before{content:"";position:absolute;inset:0;background:rgba(8,15,24,.62)}
+.promo .wrap{position:relative;z-index:2}
+.promo h2{color:#fff;font-weight:500;font-size:clamp(30px,4.6vw,46px)}
+.promo p{margin-top:12px;font-size:clamp(16px,2vw,19px);max-width:34em;color:rgba(255,255,255,.92)}
+/* ===== contacts ===== */
+.contacts-grid{display:grid;gap:28px;margin-top:34px}
+.info{background:var(--milk);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.info dl{display:grid;gap:18px}
+.info dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-d);font-weight:700}
+.info dd{font-size:18px}
+.info dd a{text-decoration:none;font-weight:700;color:var(--green-d)}
+.mapbox{margin-top:28px;display:grid;gap:16px;justify-items:start}
+.mapbox iframe{display:block;width:100%;height:340px;border:1px solid var(--line);border-radius:var(--r);background:var(--sand)}
+@media (max-width:639px){.mapbox iframe{height:270px}}
+.links{display:grid;gap:12px;align-content:start}
+.links .btn{justify-content:flex-start;padding-left:24px}
+.links svg{width:20px;height:20px;flex:none}
+
+footer{background:var(--green-dd);color:#C9D6BE;padding:44px 0;font-size:14px;text-align:center}
+footer b{color:#fff;font-family:var(--serif);font-size:26px;font-weight:600}
+footer p+p{margin-top:6px;font-size:13px;opacity:.85}
+
+/* ===== появление при прокрутке ===== */
+.js .rv{opacity:0;transform:translateY(40px);transition:opacity .9s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0ms)}
+.js .rv.fl{transform:translateX(-60px)}
+.js .rv.fr-r{transform:translateX(60px)}
+.js .rv.zoom{transform:scale(.88)}
+.js .rv.in{opacity:1;transform:none}
+.js .rvi{clip-path:inset(0 0 100% 0);transform:scale(1.08);transition:clip-path 1.3s var(--ease),transform 1.5s var(--ease);transition-delay:var(--d,0ms)}
+.js .rvi.fl2{clip-path:inset(0 100% 0 0)}
+.js .rvi.in{clip-path:inset(0 0 0 0);transform:none}
+.js .tile.rvi{border-radius:18px}
+
+@media (min-width:640px){
+  .mosaic{grid-auto-rows:190px}
+  .strip img{height:260px}
+}
+@media (min-width:900px){
+  section{padding:120px 0}
+  .nav nav{display:flex}
+  .nav .tel{display:block}
+  .burger{display:none}
+  .nav nav a::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transition:transform .35s var(--ease)}
+  .nav nav a.act::after,.nav nav a:hover::after{transform:scaleX(1)}
+  .hero-in{padding-bottom:130px}
+  .about-grid{grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .collage{min-height:620px}
+  .menu-grid{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  .menu-photo{aspect-ratio:4/5;position:sticky;top:96px}
+  .panel{padding:12px 36px}
+  .rev-head{grid-template-columns:1fr auto}
+  .slide{padding:2px 4px}
+  .card{padding:52px 56px}
+  .contacts-grid{grid-template-columns:1.1fr .9fr}
+  .mosaic{grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px}
+  .k1{grid-column:1;grid-row:1/3}.k4{grid-column:2/4;grid-row:1}.k5{grid-column:4;grid-row:1/3}
+  .k2{grid-column:2;grid-row:2}.k3{grid-column:3;grid-row:2}
+  .strip img{height:290px}
+}
+@media (max-width:639px){
+  .hero-in{padding-bottom:170px}
+  .scrollhint{bottom:70px}
+}
+</style>
+</head>
+<body>
+
+<div class="prog" id="prog"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Атлас — наверх"><svg class="logo-svg" viewBox="94.1 373.2 414.8 84.6" fill="currentColor" role="img" aria-hidden="true"><path d="m 212.4122,373.2557 h 25.4647 c 0.1922,-0.002 0.3535,0.1556 0.3586,0.3543 l -3e-4,6.315 -0.0331,14.2481 c -0.004,0.1689 -0.0644,0.314 -0.182,0.4354 l -0.2149,0.2205 c -0.2205,-0.1984 -0.3251,-0.4079 -0.3141,-0.6284 0.1911,-3.9172 -0.6156,-7.5714 -2.4199,-10.963 -3.3695,-5.5009 -8.1978,-8.4864 -14.485,-8.9567 -2.3959,-0.0626 -4.7455,-0.0754 -7.0495,-0.0385 -1.6793,0.0292 -2.8993,0.2809 -3.6598,0.7551 -1.2348,0.7716 -1.8539,2.0761 -1.8576,3.9133 -0.011,24.66 -0.005,49.0864 0.0165,73.2795 0.006,3.0039 2.1166,4.7676 5.0765,4.9111 0.1024,0.005 0.1823,0.0898 0.1823,0.1921 0,0.002 0,0.004 0,0.006 l -6e-4,0.1655 c -0.007,0.2537 -0.1377,0.3804 -0.3911,0.3804 l -22.885,-0.005 c -0.1471,0 -0.2205,-0.0754 -0.2205,-0.2262 l -0.006,-0.1764 c 0,-0.1805 0.1426,-0.3302 0.3254,-0.3421 3.0368,-0.1925 5.0321,-2.0004 5.021,-4.9768 -0.0734,-24.5863 -0.0861,-49.0771 -0.0385,-73.4723 0.006,-2.7505 -2.3094,-4.4535 -4.8889,-4.4481 -2.2414,0.004 -4.5729,0.0275 -6.9945,0.0717 -8.3724,0.1488 -15.5378,6.0851 -17.1306,14.2755 -0.3419,1.7711 -0.4961,3.75 -0.4632,5.9364 3e-4,0.002 3e-4,0.004 3e-4,0.006 0,0.1146 -0.0896,0.2087 -0.2038,0.2146 l -0.1823,0.0111 c -0.2424,0.011 -0.3637,-0.1046 -0.3637,-0.3473 l -0.0881,-20.8015 c -0.004,-0.2021 0.0972,-0.303 0.303,-0.303 z"/><path d="m 291.9974,375.8905 c 10.906,25.391 21.8268,50.7543 32.762,76.0904 1.3927,3.2263 3.8492,4.9294 7.3695,5.1094 0.167,0.008 0.2982,0.1463 0.2982,0.3135 0,0.007 -3e-4,0.015 -8e-4,0.0224 l -0.0108,0.1712 c -0.0111,0.1471 -0.0918,0.2206 -0.2426,0.2206 l -24.0095,0.0164 c -0.2168,0 -0.3251,-0.1083 -0.3251,-0.3251 v -0.182 c 0,-6e-4 0,-9e-4 0,-10e-4 0,-0.0847 0.0643,-0.1559 0.1488,-0.1644 2.2708,-0.2809 4.0566,-1.6424 2.9543,-4.2052 -8.2347,-19.1701 -16.471,-38.3366 -24.7094,-57.4993 l -1.885,-4.3212 -0.4686,-1.0085 c -0.0808,-0.1729 -0.1598,-0.171 -0.237,0.005 -8.683,20.1843 -17.3219,40.3041 -25.9165,60.3598 -0.3198,0.7387 -0.6322,1.5616 -0.9369,2.4692 -0.8544,2.5246 0.4683,3.9575 2.9764,4.1395 0.1431,0.011 0.2112,0.0901 0.2038,0.2369 l -0.005,0.1545 c -0.007,0.2058 -0.1159,0.3084 -0.3254,0.3084 l -10.9463,0.006 c -0.1304,3e-4 -0.2389,-0.1069 -0.2426,-0.2415 v -0.2106 c 0,-0.1579 0.0808,-0.2424 0.2426,-0.2534 3.1085,-0.1653 5.3481,-1.4423 6.7187,-3.8308 0.5219,-0.9076 1.1024,-2.1019 1.7419,-3.5827 8.5286,-19.7138 17.0203,-39.4424 25.4755,-59.1857 0.6137,-1.4332 1.1574,-2.8054 1.6316,-4.1173 l 1.6977,-3.8254 2.9707,-6.84 0.9646,-2.1277 c 0.0292,-0.0654 0.0709,-0.1258 0.1222,-0.1771 0.2325,-0.2325 0.6109,-0.2308 0.8456,0.004 0.0513,0.0513 0.0933,0.1119 0.1233,0.178 z"/><path d="m 386.2383,376.0393 c 10.9429,25.4497 21.8875,50.8867 32.8337,76.3109 1.2898,2.9985 3.7131,4.5765 7.2703,4.7347 0.169,0.007 0.2534,0.0955 0.2534,0.2645 l 0.005,0.1984 c 0,0.1763 -0.0881,0.2645 -0.2644,0.2645 -7.6062,0.0295 -15.2329,0.0348 -22.8796,0.0167 -0.3821,0 -0.7532,-0.0332 -1.1134,-0.0992 -0.5658,-0.1066 -0.5933,-0.2923 -0.0825,-0.5567 0.4297,-0.2206 1.0031,-0.1763 1.4496,-0.3915 1.694,-0.8121 2.1623,-2.0999 1.4054,-3.8636 -2.609,-6.0778 -5.1607,-11.9937 -7.6558,-17.748 -0.1964,-0.4615 -0.6497,-0.7611 -1.1511,-0.7611 -3e-4,0 -6e-4,0 -9e-4,0 l -37.4142,-0.0272 c -0.0808,-3e-4 -0.1528,0.0479 -0.182,0.1207 -2.4582,5.931 -4.968,11.7848 -7.5291,17.5612 -1.163,2.6235 -0.5567,4.7787 2.7448,5.0488 0.1324,0.0111 0.1947,0.0808 0.1877,0.2095 l -0.0111,0.1927 c -0.007,0.1837 -0.1029,0.2759 -0.2866,0.2759 l -10.9686,0.0164 c -0.0967,3e-4 -0.1834,-0.0675 -0.209,-0.1647 l -0.0391,-0.144 c -0.0586,-0.2353 0.0332,-0.362 0.2756,-0.3804 3.6892,-0.2461 6.2983,-2.1569 7.8267,-5.7322 7.3675,-17.2593 14.5624,-34.0776 21.5844,-50.455 2.9157,-6.8182 5.8261,-13.6417 8.7528,-20.4599 0.8819,-2.0872 1.7822,-4.1706 2.7006,-6.2504 0.1837,-0.419 0.4173,-0.7166 0.7001,-0.8929 0.005,-0.003 0.0134,-0.008 0.0216,-0.0128 0.2078,-0.1154 0.4708,-0.038 0.5873,0.1721 0.005,0.008 0.009,0.0167 0.0128,0.0252 z m -26.9087,57.0362 c -0.0232,0.0533 -0.0354,0.1116 -0.0354,0.1703 0,0.2376 0.1924,0.43 0.43,0.43 8e-4,0 0.002,0 0.002,0 l 36.4495,-0.0436 c 0.2364,-0.002 0.4269,-0.1942 0.4269,-0.4303 0,-0.0587 -0.0122,-0.1171 -0.0354,-0.1709 l -18.1559,-42.2037 c -0.0686,-0.1567 -0.2234,-0.2582 -0.3943,-0.2582 -0.1709,0 -0.3257,0.1015 -0.394,0.2582 z"/><path d="m 484.2272,373.6689 6.482,1.3505 5.7708,2.1277 c 1.3853,0.6613 2.6971,1.3373 3.9353,2.0281 1.3045,0.724 2.3207,1.0676 3.0481,1.031 3.7205,-0.1984 5.0213,-3.1805 4.6409,-6.5095 -0.0255,-0.2168 0.07,-0.3197 0.2868,-0.3087 l 0.2149,0.0111 c 0.18,0.007 0.2702,0.0992 0.2702,0.2755 l 0.005,11.9937 c 0.004,0.8195 -0.2848,0.9408 -0.8654,0.3637 -3.3548,-3.3548 -7.2864,-6.0721 -11.7952,-8.1519 l -4.9054,-1.874 -6.5647,-1.4386 c -7.1581,-1.1832 -13.4725,0.1783 -18.944,4.0842 -6.1347,4.3764 -10.6985,11.7017 -13.1346,18.9992 -3.4137,10.2447 -3.8418,20.7244 -1.2844,31.4393 0.9811,4.0238 2.4897,7.9334 4.5253,11.7292 2.9985,5.5945 7.7164,10.9851 13.515,13.7852 l 3.0977,1.3337 c 2.8108,0.9298 5.925,1.2586 9.3424,0.9867 10.2595,-0.8158 19.0653,-4.8174 26.4181,-12.0047 0.0654,-0.0623 0.1525,-0.0969 0.2426,-0.0969 0.1916,0 0.3481,0.153 0.3526,0.3447 l 0.006,12.3851 c 0,0.1837 -0.0921,0.2684 -0.2758,0.2537 l -0.1817,-0.0111 c -0.2021,-0.0147 -0.3013,-0.123 -0.2976,-0.3251 0.0385,-2.0945 0.0328,-4.0348 -1.7473,-5.4788 -0.959,-0.779 -2.0506,-1.1245 -3.274,-1.0363 -0.6687,0.0479 -1.6555,0.4427 -2.96,1.1851 -7.6504,4.3617 -15.9695,6.1861 -24.9573,5.4732 l -2.7394,-0.3195 c -8.8521,-1.2861 -16.6238,-5.2033 -23.315,-11.7513 -7.3196,-7.4299 -11.3836,-16.3242 -12.1921,-26.6828 -0.915,-11.7125 2.8494,-22.9071 10.7368,-31.6874 2.2601,-2.5095 4.8835,-4.7528 7.871,-6.7297 8.6831,-5.7433 18.2403,-8.0014 28.6724,-6.7743 z"/><path d="m 147.2627,457.8619 -16.833,-0.0439 c -0.2279,0 -0.3472,-0.114 -0.3583,-0.3419 l -0.006,-0.1432 c 3e-4,-0.006 0,-0.0121 0,-0.0178 0,-0.1378 0.1058,-0.2526 0.243,-0.2636 2.9814,-0.2146 3.6649,-2.1328 2.6727,-4.5525 -0.2497,-0.621 -0.5014,-1.2163 -0.7548,-1.7858 l -6.4103,-15.086 c -0.3418,-0.8047 -0.9499,-1.2087 -1.8244,-1.2124 -9.8625,-0.0368 -19.6404,-0.0626 -29.334,-0.0774 -0.1542,0 -0.3546,-0.0677 -0.6007,-0.2038 l 0.6999,-0.4354 28.9315,0.005 c 9e-4,0 0.002,0 0.003,0 0.4839,0 0.8765,-0.3926 0.8765,-0.8765 0,-0.0955 -0.0159,-0.1907 -0.0463,-0.2811 -0.0223,-0.0661 -0.0481,-0.1338 -0.0776,-0.2036 -3.3109,-7.577 -6.9999,-16.1572 -11.0676,-25.7403 -1.4956,-3.5203 -2.9821,-6.8751 -4.4592,-10.0647 -0.6687,-1.4402 -1.277,-2.912 -1.8244,-4.4149 -0.3197,-0.8745 -0.3583,-1.6387 -0.1156,-2.2927 1.1684,-3.1419 2.3241,-6.4417 3.4667,-9.8994 l 1.99,-5.5449 0.4904,-0.5181 c 0.1545,-0.1616 0.2848,-0.1432 0.3914,0.0552 0.2829,0.5293 0.6486,1.3136 1.0968,2.3537 10.8436,25.2036 21.6853,50.4073 32.5252,75.611 1.4293,3.318 3.9685,5.0598 7.6173,5.2251 0.1434,0.007 0.2058,0.0808 0.1874,0.2205 l -0.0165,0.1542 c -0.0258,0.2206 -0.1488,0.3309 -0.3693,0.3309 z"/></svg></a>
+    <nav id="nav" aria-label="Разделы">
+      <a href="#about" style="--i:0">О нас</a><a href="#menu" style="--i:1">Меню</a><a href="#coffee" style="--i:2">Купить зерно</a><a href="#reviews" style="--i:3">Впечатления гостей</a><a href="#contacts" style="--i:4">Контакты</a>
+    </nav>
+    <div class="right">
+      <a class="tel" href="tel:+79300998788">+7 930 099-87-88</a>
+      <div class="soc"><a href="https://vk.com/atlas.tula" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.8 17.5C6.9 17.5 3.5 13.4 3.4 6.6h3c.1 5 2.3 7.1 4 7.5V6.6h2.8v4.3c1.7-.2 3.5-2.1 4.1-4.3h2.8c-.5 2.6-2.4 4.5-3.8 5.3 1.4.7 3.6 2.4 4.4 5.6h-3.1c-.7-2.1-2.3-3.8-4.4-4v4h-.4z"/></svg></a><a href="https://t.me/atlastula" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 4.3 2.9 11.4c-1.3.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.8zM8.9 14.1l9.3-5.9c.4-.3.8-.1.5.2l-7.6 6.9-.3 3.3-1.9-4.5z"/></svg></a></div>
+      <button class="burger" type="button" aria-label="Открыть меню разделов" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="images/c/hero-img-3307.jpg" width="1333" height="2000" alt="" fetchpriority="high">
+  </div>
+  <div class="wrap hero-in" id="heroin">
+    <h1 id="h1" class="h1x" aria-label="Атлас. Ваше идеальное гастрономическое путешествие"><span class="h1a">Атлас</span><span class="h1b">Ваше идеальное <em>гастрономическое</em> путешествие…</span></h1>
+    <div class="cta">
+      <a class="btn btn-ghost" href="#menu">Меню</a>
+      <a class="btn btn-ghost" href="tel:+79300998788">Забронировать</a>
+    </div>
+  </div>
+  <a class="scrollhint" href="#about"><span>листайте вниз</span><i></i></a>
+</section>
+
+
+
+<section class="about" id="about" aria-labelledby="h-about">
+  <div class="wrap about-grid">
+    <div class="txt" data-stagger>
+      <h2 id="h-about" class="rv">Гастрономическая кофейня в <em>центре Тулы</em></h2>
+      <p class="rv about-t">С завтраками на протяжении всего дня, авторскими блюдами от нашего шефа, десертами на любой вкус и кофе из разных уголков Земли от лучших обжарщиков нашей страны.</p>
+    </div>
+    <div class="collage">
+      <div class="fr fr1 rvi"><img class="pi" data-par="1" src="images/c/about-img-0279.jpg" width="1050" height="1400" alt="Капучино с латте-артом" loading="lazy"></div>
+      <div class="fr fr2 rvi fl2" style="--d:250ms"><img class="pi" data-par="-1.6" src="images/c/about-new.jpg" width="1352" height="1400" alt="Авторское блюдо с лососем" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery" aria-labelledby="h-gal">
+  <div class="wrap">
+    <h2 id="h-gal" class="rv">Для лучшего начала <em>и продолжения дня…</em></h2>
+    <div class="mosaic6" data-stagger="70">
+      <figure class="tile rvi"><img src="images/c/gal-img-1912.jpg" width="1050" height="1400" alt="Завтрак" loading="lazy"></figure>
+      <figure class="tile rvi"><img src="images/c/gal-img-1432.jpg" width="1050" height="1400" alt="Десерт" loading="lazy"></figure>
+      <figure class="tile rvi"><img src="images/c/gal-img-7777.jpg" width="1050" height="1400" alt="Какао" loading="lazy"></figure>
+      <figure class="tile rvi"><img src="images/c/gal-img-2240.jpg" width="1050" height="1400" alt="Блюдо" loading="lazy"></figure>
+      <figure class="tile rvi"><img src="images/c/gal-soup-new.jpg" width="1050" height="1400" alt="Суп" loading="lazy"></figure>
+      <figure class="tile rvi"><img src="images/c/gal-img-9985.jpg" width="1050" height="1400" alt="Блюдо от шефа" loading="lazy"></figure>
+    </div>
+  </div>
+  <div class="strip" id="strip" aria-label="Фото кофейни, листайте">
+    <div class="strip-track"><img src="images/c/s/lenta-img-2601.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-2047.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-2101.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-0419.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-9997.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-3533.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-9059.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-icecream.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-0549.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-0962.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-7827.jpg" width="933" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-zavtraki.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-0093.jpg" width="933" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-8011.jpg" width="933" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-8030.jpg" width="933" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-0234.jpg" width="934" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-2601.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-2047.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-2101.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-0419.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-9997.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-3533.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-9059.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-icecream.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-0549.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-img-0962.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-7827.jpg" width="933" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-zavtraki.jpg" width="1050" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-0093.jpg" width="933" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-8011.jpg" width="933" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-8030.jpg" width="933" height="1400" alt="" decoding="async" draggable="false"><img src="images/c/s/lenta-new-0234.jpg" width="934" height="1400" alt="" decoding="async" draggable="false"></div>
+  </div>
+</section>
+
+<section class="evening" id="evening" aria-labelledby="h-eve">
+  <div class="eve-bg" aria-hidden="true"><img src="images/c/eve-fon.jpg" width="1334" height="2000" alt="" loading="lazy"></div>
+  <div class="wrap eve-in">
+    <h2 id="h-eve" class="rv">…И идеального <em>вечера</em></h2>
+  </div>
+  <div class="eve-strip" id="eveStrip" aria-label="Фото вечерней кофейни, листайте"><div class="eve-track"><img src="images/c/s/eve-img-0108.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-0116.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-0420.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-0757.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-1802.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-2626.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-2670.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-8472.jpg" alt="" decoding="async"><img src="images/c/s/eve-new-img-1732.jpg" width="750" height="1000" alt="" decoding="async"><img src="images/c/s/eve-new-img-6391.jpg" width="667" height="1000" alt="" decoding="async"><img src="images/c/s/eve-new-img-0124.jpg" width="667" height="1000" alt="" decoding="async"><img src="images/c/s/eve-new-img-1411.jpg" width="800" height="1000" alt="" decoding="async"><img src="images/c/s/eve-new-img-6152-1.jpg" width="667" height="1000" alt="" decoding="async"><img src="images/c/s/eve-img-0108.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-0116.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-0420.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-0757.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-1802.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-2626.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-2670.jpg" alt="" decoding="async"><img src="images/c/s/eve-img-8472.jpg" alt="" decoding="async"><img src="images/c/s/eve-new-img-1732.jpg" width="750" height="1000" alt="" decoding="async"><img src="images/c/s/eve-new-img-6391.jpg" width="667" height="1000" alt="" decoding="async"><img src="images/c/s/eve-new-img-0124.jpg" width="667" height="1000" alt="" decoding="async"><img src="images/c/s/eve-new-img-1411.jpg" width="800" height="1000" alt="" decoding="async"><img src="images/c/s/eve-new-img-6152-1.jpg" width="667" height="1000" alt="" decoding="async"></div></div>
+</section>
+
+<section id="menu" aria-labelledby="h-menu">
+  <div class="wrap">
+    <div data-stagger>
+      <h2 id="h-menu" class="rv">Меню</h2>
+      <p class="lead rv">Цены указаны в рублях.</p>
+    </div>
+    <!--MENU--><div class="rv"><div class="tabs" role="tablist" aria-label="Разделы меню"><button class="tab" role="tab" id="mt0-t" aria-controls="mt0" aria-selected="true">Кофе</button><button class="tab" role="tab" id="mt1-t" aria-controls="mt1" aria-selected="false">Авторский кофе</button><button class="tab" role="tab" id="mt2-t" aria-controls="mt2" aria-selected="false">Глинтвейн</button><button class="tab" role="tab" id="mt3-t" aria-controls="mt3" aria-selected="false">Какао</button><button class="tab" role="tab" id="mt4-t" aria-controls="mt4" aria-selected="false">Завтраки весь день</button><button class="tab" role="tab" id="mt5-t" aria-controls="mt5" aria-selected="false">Авторский чай</button><button class="tab" role="tab" id="mt6-t" aria-controls="mt6" aria-selected="false">Каши</button><button class="tab" role="tab" id="mt7-t" aria-controls="mt7" aria-selected="false">Супы</button><button class="tab" role="tab" id="mt8-t" aria-controls="mt8" aria-selected="false">Салаты</button><button class="tab" role="tab" id="mt9-t" aria-controls="mt9" aria-selected="false">Закуски и стартеры</button><button class="tab" role="tab" id="mt10-t" aria-controls="mt10" aria-selected="false">Пасты</button><button class="tab" role="tab" id="mt11-t" aria-controls="mt11" aria-selected="false">Горячие блюда</button><button class="tab" role="tab" id="mt12-t" aria-controls="mt12" aria-selected="false">Напитки</button><button class="tab" role="tab" id="mt13-t" aria-controls="mt13" aria-selected="false">Коктейли</button><button class="tab" role="tab" id="mt14-t" aria-controls="mt14" aria-selected="false">Винная карта</button><button class="tab" role="tab" id="mt15-t" aria-controls="mt15" aria-selected="false">КБЖУ</button></div>
+<div class="mpane panel" role="tabpanel" id="mt0" aria-labelledby="mt0-t"><div class="mgrid"><article class="mi"><img src="images/m/7f14a90645.jpg" width="675" height="900" alt="Айс латте" loading="lazy"><div class="mi-t"><span>Айс латте</span><b>290 ₽</b></div></article><article class="mi"><img src="images/m/cf0b16af9d.jpg" width="675" height="900" alt="Американо" loading="lazy"><div class="mi-t"><span>Американо</span><b>190 ₽</b></div></article><article class="mi"><img src="images/m/502773f5c6.jpg" width="675" height="900" alt="Бамбл" loading="lazy"><div class="mi-t"><span>Бамбл</span><b>290 ₽</b></div></article><article class="mi"><img src="images/m/eb4d5d3b1c.jpg" width="675" height="900" alt="Воронка, аэропресс, кемекс, Hoop" loading="lazy"><div class="mi-t"><span>Воронка, аэропресс, кемекс, Hoop</span><b>320 ₽</b></div></article><article class="mi"><img src="images/m/0065b7ccca.jpg" width="675" height="900" alt="Капучино" loading="lazy"><div class="mi-t"><span>Капучино</span><b>250 ₽</b></div></article><article class="mi"><img src="images/m/1b1239be4b.jpg" width="675" height="900" alt="Колд брю" loading="lazy"><div class="mi-t"><span>Колд брю</span><b>270 ₽</b></div></article><article class="mi"><img src="images/m/ea18f4203a.jpg" width="675" height="900" alt="Латте" loading="lazy"><div class="mi-t"><span>Латте</span><b>290 ₽</b></div></article><article class="mi"><img src="images/m/52a3e02baf.jpg" width="675" height="900" alt="Матча Латте" loading="lazy"><div class="mi-t"><span>Матча Латте</span><b>320 ₽</b></div></article><article class="mi"><img src="images/m/eb51afe57e.jpg" width="675" height="900" alt="Раф" loading="lazy"><div class="mi-t"><span>Раф</span><b>290 ₽</b></div></article><article class="mi"><img src="images/m/3ff87c6332.jpg" width="675" height="900" alt="Фильтр" loading="lazy"><div class="mi-t"><span>Фильтр</span><b>230 ₽</b></div></article><article class="mi"><img src="images/m/ff8768095f.jpg" width="675" height="900" alt="Флэт Уайт" loading="lazy"><div class="mi-t"><span>Флэт Уайт</span><b>250 ₽</b></div></article><article class="mi"><img src="images/m/632f24d6e4.jpg" width="675" height="900" alt="Эспрессо" loading="lazy"><div class="mi-t"><span>Эспрессо</span><b>190 ₽</b></div></article><article class="mi"><img src="images/m/414bad6083.jpg" width="675" height="900" alt="Эспрессо тоник" loading="lazy"><div class="mi-t"><span>Эспрессо тоник</span><b>320 ₽</b></div></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt1" aria-labelledby="mt1-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/9108ef0153.jpg" width="675" height="900" alt="Бразилия раф" loading="lazy"><div class="mi-t"><span>Бразилия раф</span><b>390 ₽</b></div><p class="mi-d">Бобы тонка, ваниль, сливочный сыр</p></article><article class="mi"><img src="images/m/97ced5e067.jpg" width="675" height="900" alt="Латте Бомбей" loading="lazy"><div class="mi-t"><span>Латте Бомбей</span><b>390 ₽</b></div><p class="mi-d">Финики, миндаль, кардамон, корица</p></article><article class="mi"><img src="images/m/69f725ab80.jpg" width="675" height="900" alt="Тайский латте" loading="lazy"><div class="mi-t"><span>Тайский латте</span><b>390 ₽</b></div><p class="mi-d">Цитрусовый олео, кокосовое молоко</p></article><article class="mi"><img src="images/m/810109987e.jpg" width="675" height="900" alt="Фильтр Байкал" loading="lazy"><div class="mi-t"><span>Фильтр Байкал</span><b>390 ₽</b></div><p class="mi-d">Жимолость, можжевельник, батч</p></article><article class="mi"><img src="images/m/79bad87296.jpg" width="675" height="900" alt="Фильтр клюква" loading="lazy"><div class="mi-t"><span>Фильтр клюква</span><b>390 ₽</b></div><p class="mi-d">Клюквенное пюре, табаско, батч</p></article><article class="mi"><img src="images/m/d4bdc0b7eb.jpg" width="675" height="900" alt="Яблочный кофетюр" loading="lazy"><div class="mi-t"><span>Яблочный кофетюр</span><b>390 ₽</b></div><p class="mi-d">Яблочный сок, ваниль, пряные специи</p></article><article class="mi"><img src="images/m/33b84d5f94.jpg" width="675" height="900" alt="Японский капучино" loading="lazy"><div class="mi-t"><span>Японский капучино</span><b>390 ₽</b></div><p class="mi-d">Топленое молоко, соленая карамель, печенье</p></article><article class="mi"><img src="images/m/61f37915ca.jpg" width="675" height="900" alt="Японский капучино айс" loading="lazy"><div class="mi-t"><span>Японский капучино айс</span><b>390 ₽</b></div><p class="mi-d">Топленое молоко, соленая карамель, печенье</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt2" aria-labelledby="mt2-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/4117024424.jpg" width="675" height="900" alt="Белый глинтвейн" loading="lazy"><div class="mi-t"><span>Белый глинтвейн</span></div></article><article class="mi"><img src="images/m/2eed9799a3.jpg" width="675" height="900" alt="Глинтвейн безалко" loading="lazy"><div class="mi-t"><span>Глинтвейн безалко</span><b>550 ₽</b></div></article><article class="mi"><img src="images/m/c437314fe6.jpg" width="675" height="900" alt="Красный глинтвейн" loading="lazy"><div class="mi-t"><span>Красный глинтвейн</span><b>550 ₽</b></div></article><article class="mi"><img src="images/m/f047af6b41.jpg" width="675" height="900" alt="Рождественский грог" loading="lazy"><div class="mi-t"><span>Рождественский грог</span><b>550 ₽</b></div><p class="mi-d">Ром, яблоко, цитрус, жасмин, мед, ягоды, пряные специи</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt3" aria-labelledby="mt3-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/6ae8d4ae12.jpg" width="675" height="900" alt="Какао с маршмэллоу" loading="lazy"><div class="mi-t"><span>Какао с маршмэллоу</span><b>270 ₽</b></div></article><article class="mi"><img src="images/m/48c168e167.jpg" width="675" height="900" alt="Классический какао" loading="lazy"><div class="mi-t"><span>Классический какао</span><b>250 ₽</b></div></article><article class="mi"><img src="images/m/4a02e4d22b.jpg" width="675" height="900" alt="Кубинский эликсир" loading="lazy"><div class="mi-t"><span>Кубинский эликсир</span><b>350 ₽</b></div><p class="mi-d">С добавлением кубинского рома</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt4" aria-labelledby="mt4-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/68ea4066be.jpg" width="675" height="900" alt="Английский завтрак" loading="lazy"><div class="mi-t"><span>Английский завтрак</span><b>750 ₽</b></div><p class="mi-d">Глазунья, бекон, кукуруза, опята, колбаска, бриошь</p></article><article class="mi"><img src="images/m/51b38bf667.jpg" width="675" height="900" alt="Французский завтрак" loading="lazy"><div class="mi-t"><span>Французский завтрак</span><b>650 ₽</b></div><p class="mi-d">Омлет, круассан, пармезан, микс салата, томатное варенье</p></article><article class="mi"><img src="images/m/788664944e.jpg" width="675" height="900" alt="Скандинавский завтрак" loading="lazy"><div class="mi-t"><span>Скандинавский завтрак</span><b>830 ₽</b></div><p class="mi-d">Пашот, лосось, микс салата, томаты, огурцы, цитрусовая сметана, понзу</p></article><article class="mi"><img src="images/m/404fa06f38.jpg" width="675" height="900" alt="Азиатский завтрак" loading="lazy"><div class="mi-t"><span>Азиатский завтрак</span><b>790 ₽</b></div><p class="mi-d">Креветки, микс салата, лепешка, яичный блин, кунжут, малосольный огурец</p></article><article class="mi"><img src="images/m/1668f85a12.jpg" width="675" height="900" alt="Бриошь с лососем и яйцом пашот" loading="lazy"><div class="mi-t"><span>Бриошь с лососем и яйцом пашот</span><b>750 ₽</b></div><p class="mi-d">Взбитый крем-чиз, унаги, кунжут</p></article><article class="mi"><img src="images/m/e6b9242540.jpg" width="675" height="900" alt="Вафля с карамельным кремом" loading="lazy"><div class="mi-t"><span>Вафля с карамельным кремом</span><b>480 ₽</b></div><p class="mi-d">Вишневое варенье, лепестки миндаля, ягоды</p></article><article class="mi"><img src="images/m/fbfb27cca8.jpg" width="675" height="900" alt="Вафля с лососем" loading="lazy"><div class="mi-t"><span>Вафля с лососем</span><b>690 ₽</b></div><p class="mi-d">Взбитый крем-чиз, ягоды, кунжутный унаги, микс салата</p></article><article class="mi"><img src="images/m/69e97830fa.jpg" width="675" height="900" alt="Сендвич с окороком" loading="lazy"><div class="mi-t"><span>Сендвич с окороком</span><b>490 ₽</b></div><p class="mi-d">Чеддер, малосольный огурец, луковый майо, лук криспи, салат айсберг</p></article><article class="mi"><img src="images/m/c36ad676f7.jpg" width="675" height="900" alt="Сендвич с ростбифом" loading="lazy"><div class="mi-t"><span>Сендвич с ростбифом</span><b>690 ₽</b></div><p class="mi-d">Томатное варенье, луковый мармелад, взбитый крем-чиз, чеддер</p></article><article class="mi"><img src="images/m/a88777bc69.jpg" width="675" height="900" alt="Скрембл с креветками" loading="lazy"><div class="mi-t"><span>Скрембл с креветками</span><b>590 ₽</b></div><p class="mi-d">Пармезан, сладкий чили соус, кунжут</p></article><article class="mi"><img src="images/m/ed3b505747.jpg" width="675" height="900" alt="Сырники с вишней" loading="lazy"><div class="mi-t"><span>Сырники с вишней</span><b>490 ₽</b></div><p class="mi-d">Карамельный крем, шоколад</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt5" aria-labelledby="mt5-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/e91a0e8a75.jpg" width="675" height="900" alt="Горный Юньнань" loading="lazy"><div class="mi-t"><span>Горный Юньнань</span><b>280 ₽</b></div><p class="mi-d">Гречишный чай, персик, лемонграсс, лаванда, цитрус</p></article><article class="mi"><img src="images/m/dc874e5bc0.jpg" width="675" height="900" alt="Дары Карелии" loading="lazy"><div class="mi-t"><span>Дары Карелии</span><b>280 ₽</b></div><p class="mi-d">Ройбуш, смородина, розмарин, яблоко</p></article><article class="mi"><img src="images/m/502f70aa61.jpg" width="675" height="900" alt="Сердце Сицилии" loading="lazy"><div class="mi-t"><span>Сердце Сицилии</span><b>280 ₽</b></div><p class="mi-d">Сенча, киви, бузина, ягоды, мята</p></article><article class="mi"><img src="images/m/86ac88ab93.jpg" width="675" height="900" alt="Японский рассвет" loading="lazy"><div class="mi-t"><span>Японский рассвет</span><b>280 ₽</b></div><p class="mi-d">Жасмин, клубника, груша, цитрус, корица</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt6" aria-labelledby="mt6-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/1088f5cca0.jpg" width="675" height="900" alt="Овсяная каша с орехами" loading="lazy"><div class="mi-t"><span>Овсяная каша с орехами</span><b>380 ₽</b></div><p class="mi-d">Сливочное масло, арахисовая паста</p></article><article class="mi"><img src="images/m/9fb8c080e9.jpg" width="675" height="900" alt="Пшенная каша с вяленой клюквой" loading="lazy"><div class="mi-t"><span>Пшенная каша с вяленой клюквой</span><b>380 ₽</b></div><p class="mi-d">Сливочное масло, карамельный крем</p></article><article class="mi"><img src="images/m/2d890fa1fe.jpg" width="675" height="900" alt="Рисовая каша с вареньем" loading="lazy"><div class="mi-t"><span>Рисовая каша с вареньем</span><b>380 ₽</b></div><p class="mi-d">Сливочное масло, ягоды</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt7" aria-labelledby="mt7-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/0f76c1fd8a.jpg" width="675" height="900" alt="Копченый куриный суп" loading="lazy"><div class="mi-t"><span>Копченый куриный суп</span><b>530 ₽</b></div><p class="mi-d">Маринованное яйцо, куриное филе, зеленый лук</p></article><article class="mi"><img src="images/m/6ac8b94075.jpg" width="675" height="900" alt="Кукурузный крем-суп" loading="lazy"><div class="mi-t"><span>Кукурузный крем-суп</span><b>730 ₽</b></div><p class="mi-d">Лосось, креветки, цедра, лук зеленый</p></article><article class="mi"><img src="images/m/d9c1407f19.jpg" width="675" height="900" alt="Томатный суп с говядиной" loading="lazy"><div class="mi-t"><span>Томатный суп с говядиной</span><b>650 ₽</b></div><p class="mi-d">Сельдерей, томаты, сметана, маслины</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt8" aria-labelledby="mt8-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/4c59cabc40.jpg" width="675" height="900" alt="Салат с креветками и нори" loading="lazy"><div class="mi-t"><span>Салат с креветками и нори</span><b>690 ₽</b></div><p class="mi-d">Кунжутный унаги, цукини, томаты, ананас</p></article><article class="mi"><img src="images/m/3bf057f028.jpg" width="675" height="900" alt="Салат с овощами" loading="lazy"><div class="mi-t"><span>Салат с овощами</span><b>480 ₽</b></div><p class="mi-d">Томаты, огурец, цукини, печеный перец, маслины, цитрусовая сметана</p></article><article class="mi"><img src="images/m/a15c4dc9d9.jpg" width="675" height="900" alt="Салат с опаленным лососем" loading="lazy"><div class="mi-t"><span>Салат с опаленным лососем</span><b>750 ₽</b></div><p class="mi-d">Взбитый крем-чиз, соус чили-лайм, кешью, томаты</p></article><article class="mi"><img src="images/m/8fdeacf7c3.jpg" width="675" height="900" alt="Салат с печеным баклажаном" loading="lazy"><div class="mi-t"><span>Салат с печеным баклажаном</span><b>650 ₽</b></div><p class="mi-d">Песто, пармезан, кедровый соус</p></article><article class="mi"><img src="images/m/fce9e43147.jpg" width="675" height="900" alt="Салат с ростбифом и опятами" loading="lazy"><div class="mi-t"><span>Салат с ростбифом и опятами</span><b>790 ₽</b></div><p class="mi-d">Пармезан, луковый мармелад, опята, чесночное масло, трюфельный соус</p></article><article class="mi"><img src="images/m/d85add8e5c.jpg" width="675" height="900" alt="Салат с филе цыпленка" loading="lazy"><div class="mi-t"><span>Салат с филе цыпленка</span><b>570 ₽</b></div><p class="mi-d">Соус гальби, печеный перец, огурец, мусс из брынзы, зеленый лук</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt9" aria-labelledby="mt9-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/7175f1fdf9.jpg" width="675" height="900" alt="Баклажановый хумус" loading="lazy"><div class="mi-t"><span>Баклажановый хумус</span><b>450 ₽</b></div><p class="mi-d">Вяленые томаты, кедровые орехи, пита</p></article><article class="mi"><img src="images/m/21d5532725.jpg" width="675" height="900" alt="Мусс из брынзы с песто" loading="lazy"><div class="mi-t"><span>Мусс из брынзы с песто</span><b>450 ₽</b></div><p class="mi-d">Печеный перец, бальзамик, тартин</p></article><article class="mi"><img src="images/m/d7841d4747.jpg" width="675" height="900" alt="Паштет из лосося" loading="lazy"><div class="mi-t"><span>Паштет из лосося</span><b>530 ₽</b></div><p class="mi-d">Маслины, зеленый лук, ремесленный хлеб</p></article><article class="mi"><img src="images/m/eb36662c57.jpg" width="675" height="900" alt="Паштет из птицы" loading="lazy"><div class="mi-t"><span>Паштет из птицы</span><b>530 ₽</b></div><p class="mi-d">Вишневый конфитюр, луковый мармелад, кедр</p></article><article class="mi"><img src="images/m/d9cd892582.jpg" width="675" height="900" alt="Роти с креветкой" loading="lazy"><div class="mi-t"><span>Роти с креветкой</span><b>650 ₽</b></div><p class="mi-d">Томаты, рукола, чили-лайм соус, пармезан, взбитый крем-чиз</p></article><article class="mi"><img src="images/m/28c8c9ddfe.jpg" width="675" height="900" alt="Роти с лососем и риетом" loading="lazy"><div class="mi-t"><span>Роти с лососем и риетом</span><b>750 ₽</b></div><p class="mi-d">Вяленые томаты, рукола, цедра, чесночное масло</p></article><article class="mi"><img src="images/m/a52fbd3d68.jpg" width="675" height="900" alt="Севиче из лосося" loading="lazy"><div class="mi-t"><span>Севиче из лосося</span><b>650 ₽</b></div><p class="mi-d">Гранатовый дрессинг, огурец, понзу</p></article><article class="mi"><img src="images/m/5b403479d3.jpg" width="675" height="900" alt="Тартар из говядины" loading="lazy"><div class="mi-t"><span>Тартар из говядины</span><b>750 ₽</b></div><p class="mi-d">Оливковое масло, трюфельное масло, каперсы, майо из зеленого лука, тартин</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt10" aria-labelledby="mt10-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/d92a968473.jpg" width="675" height="900" alt="Орзо с опаленным лососем" loading="lazy"><div class="mi-t"><span>Орзо с опаленным лососем</span><b>750 ₽</b></div><p class="mi-d">Устричный соус, клубника, фета</p></article><article class="mi"><img src="images/m/041df84f90.jpg" width="675" height="900" alt="Пенне с креветками" loading="lazy"><div class="mi-t"><span>Пенне с креветками</span><b>870 ₽</b></div><p class="mi-d">Нори, бекон, пармезан, сливочный соус</p></article><article class="mi"><img src="images/m/5dabdecc28.jpg" width="675" height="900" alt="Спагетти с томленой говядиной" loading="lazy"><div class="mi-t"><span>Спагетти с томленой говядиной</span><b>730 ₽</b></div><p class="mi-d">Томатное варенье, маслины, пармезан, вяленые томаты</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt11" aria-labelledby="mt11-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/f972bb5c38.jpg" width="675" height="900" alt="Бургер с рваной говядиной" loading="lazy"><div class="mi-t"><span>Бургер с рваной говядиной</span><b>670 ₽</b></div><p class="mi-d">Печеный перец, луковый майо, шрирача, лук криспи</p></article><article class="mi"><img src="images/m/7b516c3ce1.jpg" width="675" height="900" alt="Говяжий ростбиф с пюре из сельдерея" loading="lazy"><div class="mi-t"><span>Говяжий ростбиф с пюре из сельдерея</span><b>890 ₽</b></div><p class="mi-d">Луковый мармелад, соус гальби, лук криспи, малосольный огурец</p></article><article class="mi"><img src="images/m/59e2429b12.jpg" width="675" height="900" alt="Рубленые котлеты из лосося" loading="lazy"><div class="mi-t"><span>Рубленые котлеты из лосося</span><b>950 ₽</b></div><p class="mi-d">Цветная капуста, кунжутный соус, рукола</p></article><article class="mi"><img src="images/m/7325101165.jpg" width="675" height="900" alt="Утиная грудка с бататом" loading="lazy"><div class="mi-t"><span>Утиная грудка с бататом</span><b>870 ₽</b></div><p class="mi-d">Вишневый конфитюр, соус хойсин</p></article><article class="mi"><img src="images/m/6960509558.jpg" width="675" height="900" alt="Филе цыпленка" loading="lazy"><div class="mi-t"><span>Филе цыпленка</span><b>680 ₽</b></div><p class="mi-d">Соус демиглас, опята, зеленый лук, пармезан</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt12" aria-labelledby="mt12-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/325102b7d9.jpg" width="675" height="900" alt="Лимонад вишня-миндаль" loading="lazy"><div class="mi-t"><span>Лимонад вишня-миндаль</span><b>320 ₽</b></div></article><article class="mi"><img src="images/m/cb158d750a.jpg" width="675" height="900" alt="Лимонад персик-розмарин" loading="lazy"><div class="mi-t"><span>Лимонад персик-розмарин</span><b>320 ₽</b></div></article><article class="mi"><img src="images/m/f86ced6ca4.jpg" width="675" height="900" alt="Лимонад слива-крыжовник" loading="lazy"><div class="mi-t"><span>Лимонад слива-крыжовник</span><b>320 ₽</b></div></article><article class="mi"><img src="images/m/1530ba9481.jpg" width="675" height="900" alt="Смузи киви-базилик" loading="lazy"><div class="mi-t"><span>Смузи киви-базилик</span><b>370 ₽</b></div></article><article class="mi"><img src="images/m/644a5513c3.jpg" width="675" height="900" alt="Смузи манго-маракуйя" loading="lazy"><div class="mi-t"><span>Смузи манго-маракуйя</span><b>370 ₽</b></div></article><article class="mi"><img src="images/m/af389e30d9.jpg" width="675" height="900" alt="Смузи ягоды-мята" loading="lazy"><div class="mi-t"><span>Смузи ягоды-мята</span><b>370 ₽</b></div></article><article class="mi"><img src="images/m/00b3632d53.jpg" width="675" height="900" alt="Фреши" loading="lazy"><div class="mi-t"><span>Фреши</span><b>420 ₽</b></div><p class="mi-d">Апельсин, грейпфрут, микс</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt13" aria-labelledby="mt13-t" hidden><div class="mgrid"><article class="mi"><img src="images/m/c7ad434979.jpg" width="675" height="900" alt="Азиатский спритц" loading="lazy"><div class="mi-t"><span>Азиатский спритц</span><b>450 ₽</b></div><p class="mi-d">Джин безалко, белый лотос, юдзу</p></article><article class="mi"><img src="images/m/0362a4ca1f.jpg" width="675" height="900" alt="Апероль спритц" loading="lazy"><div class="mi-t"><span>Апероль спритц</span><b>750 ₽</b></div><p class="mi-d">Ликер Апероль, просекко, содовая</p></article><article class="mi"><img src="images/m/012159d221.jpg" width="675" height="900" alt="Калифорния Сауэр" loading="lazy"><div class="mi-t"><span>Калифорния Сауэр</span><b>750 ₽</b></div><p class="mi-d">Виски, ореховый ликер, красное вино, белок</p></article><article class="mi"><img src="images/m/0cc45a8358.jpg" width="675" height="900" alt="Негрони Гольфстрим" loading="lazy"><div class="mi-t"><span>Негрони Гольфстрим</span><b>650 ₽</b></div><p class="mi-d">Джин, сухой вермут, электрические цветы, лемонграсс, эзгиль</p></article><article class="mi"><img src="images/m/4bf562b294.jpg" width="675" height="900" alt="Огуречный джин-тоник" loading="lazy"><div class="mi-t"><span>Огуречный джин-тоник</span><b>450 ₽</b></div><p class="mi-d">Джин безалко, огуречный олео, цитрусы, тоник</p></article><article class="mi"><img src="images/m/c8e07ac56d.jpg" width="675" height="900" alt="Порнстар мартини" loading="lazy"><div class="mi-t"><span>Порнстар мартини</span><b>690 ₽</b></div><p class="mi-d">Водка, ваниль, лайм, маракуйя, просекко</p></article><article class="mi"><img src="images/m/686906425f.jpg" width="675" height="900" alt="Поцелуй Фрейи" loading="lazy"><div class="mi-t"><span>Поцелуй Фрейи</span><b>650 ₽</b></div><p class="mi-d">Ром, черника, лайм, лактоза, лесной орех</p></article><article class="mi"><img src="images/m/be3d3f025f.jpg" width="675" height="900" alt="Сгроппино" loading="lazy"><div class="mi-t"><span>Сгроппино</span><b>780 ₽</b></div><p class="mi-d">Просекко, сорбет, лимончелло</p></article><article class="mi"><img src="images/m/0c4e4653fe.jpg" width="675" height="900" alt="Слезы Венеры" loading="lazy"><div class="mi-t"><span>Слезы Венеры</span><b>690 ₽</b></div><p class="mi-d">Джин, ликер из земляники, грейпфрут, белок</p></article></div></div>
+<div class="mpane panel" role="tabpanel" id="mt14" aria-labelledby="mt14-t" hidden><a class="mwine" href="images/m/b685e0ab41.jpg" target="_blank" rel="noopener"><img src="images/m/b685e0ab41.jpg" width="1120" height="2400" alt="Винная карта" loading="lazy"></a></div>
+<div class="mpane panel" role="tabpanel" id="mt15" aria-labelledby="mt15-t" hidden><div class="mkbju"><p>Калорийность, белки, жиры и углеводы всех блюд — в отдельной таблице.</p><a class="btn btn-main" href="https://drive.google.com/file/d/1NHDoIaLasFxTFoIbr1FnzIxXLugv706C/view" target="_blank" rel="noopener">Открыть таблицу КБЖУ</a></div></div><!--/MENU--></div>
+  </div>
+</section>
+
+<section class="duo" id="coffee" aria-label="Кофе с собой и молоко">
+  <div class="duo-part" style="--bg:url(images/c/coffee-fon.jpg)">
+    <div class="duo-in rv">
+      <h2>Кофе, который хочется <em>забрать с собой</em></h2>
+      <p>Мы готовим на зерне от лучших обжарщиков страны и предлагаем взять любимый кофе домой. Зерно от 50 г, дрип-пакеты и помол под любой способ приготовления.</p>
+    </div>
+  </div>
+  <div class="duo-part" style="--bg:url(images/c/milk-fon.jpg)">
+    <div class="duo-in rv">
+      <h2>Молоко <em>5YES</em></h2>
+      <p>Мы выбираем молоко от 5YES — на наш взгляд, лучшее молоко для кофейных напитков. Оно идеально раскрывает вкус кофейного зерна, создаёт нежную пенку и помогает добиться идеального баланса в каждой чашке.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews" aria-labelledby="h-rev">
+  <div class="wrap">
+    <div class="rev-head">
+      <div data-stagger>
+        <h2 id="h-rev" class="rv">Ваши впечатления — <em>наше вдохновение</em></h2>
+      </div>
+    </div>
+    <div class="ya-rev rv"><iframe src="https://yandex.ru/maps-reviews-widget/87462273837?comments" title="Отзывы гостей на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+
+<section class="promo" aria-labelledby="h-promo">
+  <div class="wrap rv">
+    <h2 id="h-promo">Кешбэк с каждой покупки</h2>
+    <p>Возвращаем 5% баллами при заказе любых безалкогольных напитков, еды или десерта</p>
+  </div>
+</section>
+
+<section id="contacts" aria-labelledby="h-c">
+  <div class="wrap">
+    <div data-stagger>
+      <h2 id="h-c" class="rv">Ждём Вас <em>в Атласе</em></h2>
+    </div>
+    <div class="contacts-grid">
+      <div class="info rv fl">
+        <dl>
+          <div><dt>Адрес</dt><dd>Тула, Советская ул., 17</dd></div>
+          <div><dt>Часы работы</dt><dd>Вс–Чт 09:00–22:00<br>Пт–Сб 09:00–23:00</dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+79300998788">+7 930 099-87-88</a></dd></div>
+        </dl>
+      </div>
+      <div class="links" data-stagger="110">
+        <a class="btn btn-main rv fr-r" href="tel:+79300998788"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Забронировать</a>
+        <a class="btn btn-line rv fr-r" href="https://t.me/atlastula" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l12-9"/></svg>Telegram</a>
+        <a class="btn btn-line rv fr-r" href="https://vk.com/atlas.tula" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4"/><path d="M7 9.5c1 3 3 5 5 5v-5M12 12c2-.5 3-1.5 4-2.5"/></svg>ВКонтакте</a>
+        <a class="btn btn-line rv fr-r" href="https://yandex.ru/maps/org/atlas/87462273837/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Открыть в Яндекс Картах</a>
+        <a class="btn btn-line rv fr-r" href="https://2gis.ru/tula/firm/70000001084321970" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Открыть в 2ГИС</a>
+      </div>
+    </div>
+    <div class="mapbox rv">
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=37.612262%2C54.196086&amp;z=17&amp;mode=poi&amp;poi%5Bpoint%5D=37.612262%2C54.196086&amp;poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D87462273837" width="100%" height="340" title="Гастрокофейня Атлас на карте" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <a class="btn btn-main" href="https://yandex.ru/maps/?rtext=~54.196086%2C37.612262&amp;rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>© Атлас, Тула</b></p>
+    <p>Советская ул., 17 · <a href="tel:+79300998788">+7 930 099-87-88</a></p>
+  </div>
+</footer>
+
+<button class="up" type="button" aria-label="Наверх"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></button>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var header=document.querySelector('header.nav');
+  var nav=document.getElementById('nav');
+  var burger=document.querySelector('.burger');
+  var up=document.querySelector('.up');
+  var prog=document.getElementById('prog');
+  var raf=window.requestAnimationFrame.bind(window);
+
+
+
+  /* ---- плавная прокрутка: своя анимация (не CSS), работает даже при выключенных анимациях Windows ---- */
+  var anim=null;
+  function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+  function stopScroll(){if(anim){cancelAnimationFrame(anim);anim=null}}
+  function scrollToY(getY){
+    stopScroll();
+    var start=window.pageYOffset,dist=getY()-start;
+    if(Math.abs(dist)<2)return;
+    var dur=Math.min(1000,Math.max(550,Math.abs(dist)*.35)),t0=null;
+    function step(ts){
+      if(t0===null)t0=ts;
+      var p=Math.min(1,(ts-t0)/dur);
+      window.scrollTo(0,start+(getY()-start)*ease(p));
+      anim=p<1?raf(step):raf(settle);
+    }
+    // после остановки ещё ~0.7 с подправляем позицию, если вёрстка сдвинулась (догрузились картинки)
+    var s0=null;
+    function settle(ts){
+      if(s0===null)s0=ts;
+      var y=getY();
+      if(Math.abs(window.pageYOffset-y)>3)window.scrollTo(0,y);
+      anim=ts-s0<700?raf(settle):null;
+    }
+    anim=raf(step);
+  }
+  function toTop(){return 0}
+  window.addEventListener('wheel',stopScroll,{passive:true});
+  window.addEventListener('touchstart',stopScroll,{passive:true});
+  function targetY(el){
+    var pad=parseFloat(getComputedStyle(el).paddingTop)||0;
+    var y=el.getBoundingClientRect().top+window.pageYOffset-header.offsetHeight+Math.max(0,pad-32);
+    return Math.max(0,Math.min(y,document.documentElement.scrollHeight-window.innerHeight));
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest?e.target.closest('a[href^="#"]'):null;
+    if(!a)return;
+    var id=a.getAttribute('href').slice(1);
+    var el=id&&id!=='top'?document.getElementById(id):null;
+    if(id&&id!=='top'&&!el)return;
+    e.preventDefault();
+    closeMenu();
+    scrollToY(el?function(){return targetY(el)}:toTop);
+    try{history.replaceState(null,'',id&&id!=='top'?'#'+id:location.pathname+location.search)}catch(err){}
+  });
+  up.addEventListener('click',function(){scrollToY(toTop)});
+
+  /* ---- мобильное меню ---- */
+  function closeMenu(){nav.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Открыть меню разделов')}
+  burger.addEventListener('click',function(){
+    var open=!nav.classList.contains('open');
+    nav.classList.toggle('open',open);
+    burger.setAttribute('aria-expanded',open);
+    burger.setAttribute('aria-label',open?'Закрыть меню разделов':'Открыть меню разделов');
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu()});
+  document.addEventListener('click',function(e){if(nav.classList.contains('open')&&!header.contains(e.target))closeMenu()});
+
+  /* ---- подсветка раздела в меню ---- */
+  var links={};
+  [].forEach.call(nav.querySelectorAll('a'),function(a){links[a.getAttribute('href').slice(1)]=a});
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(!en.isIntersecting)return;
+        for(var k in links)links[k].classList.toggle('act',k===en.target.id);
+      });
+    },{rootMargin:'-45% 0px -50% 0px'});
+    [].forEach.call(document.querySelectorAll('main section'),function(s){so.observe(s)});
+  }
+
+  /* ---- «открыто сейчас» (Тула живёт по московскому времени, UTC+3) ---- */
+
+
+  /* ---- очередь появления (stagger) ---- */
+  [].forEach.call(document.querySelectorAll('[data-stagger]'),function(g){
+    var step=parseInt(g.getAttribute('data-stagger'),10)||110,i=0;
+    [].forEach.call(g.querySelectorAll('.rv,.rvi'),function(el){el.style.setProperty('--d',(i++*step)+'ms')});
+  });
+
+  /* ---- появление при прокрутке ---- */
+  var revs=[].slice.call(document.querySelectorAll('.rv,.rvi'));
+  var counters=[].slice.call(document.querySelectorAll('[data-count]')),cdone=[];
+  function fmt(v,dec){return v.toFixed(dec).replace('.',',')}
+  function runCount(el){
+    if(cdone.indexOf(el)>=0)return;cdone.push(el);
+    var to=parseFloat(el.getAttribute('data-count')),dec=parseInt(el.getAttribute('data-dec')||0,10),t0=null,dur=1800;
+    function st(ts){
+      if(t0===null)t0=ts;var p=Math.min(1,(ts-t0)/dur),e=1-Math.pow(1-p,3);
+      el.textContent=fmt(to*e,dec);
+      if(p<1)raf(st);else el.textContent=fmt(to,dec);
+    }
+    el.textContent=fmt(0,dec);raf(st);
+  }
+  function checkReveal(){
+    var vh=window.innerHeight;
+    for(var i=revs.length-1;i>=0;i--){
+      var r=revs[i].getBoundingClientRect();
+      /* показываем, если вошёл в экран ИЛИ уже остался выше (страницу пролистали) */
+      if(r.top<vh*0.92||r.bottom<0){revs[i].classList.add('in');revs.splice(i,1)}
+    }
+    for(var j=0;j<counters.length;j++){
+      var c=counters[j].getBoundingClientRect();
+      if(c.top<vh*0.95&&c.bottom>0)runCount(counters[j]);
+    }
+  }
+
+  /* ---- параллакс (transform на rAF) ---- */
+  var pars=[].slice.call(document.querySelectorAll('[data-par]'));
+  var heroin=document.getElementById('heroin');
+  function parallax(){
+    var vh=window.innerHeight,k=window.innerWidth<700?.5:1;
+    for(var i=0;i<pars.length;i++){
+      var el=pars[i],par=el.parentNode,r=par.getBoundingClientRect();
+      if(r.bottom<-100||r.top>vh+100)continue;
+      var p=((r.top+r.height/2)-vh/2)/(vh/2+r.height/2);
+      p=Math.max(-1,Math.min(1,p));
+      var sp=parseFloat(el.getAttribute('data-par'));
+      el.style.transform='translate3d(0,'+(-p*sp*k*par.offsetHeight*.09).toFixed(1)+'px,0)';
+    }
+    var y=window.pageYOffset;
+    if(y<window.innerHeight*1.2){
+      heroin.style.transform='translate3d(0,'+(y*.22).toFixed(1)+'px,0)';
+      heroin.style.opacity=Math.max(0,1-y/(window.innerHeight*.75)).toFixed(3);
+    }
+  }
+
+  /* ---- шапка, прогресс, «наверх» ---- */
+  var ticking=false;
+  function onScroll(){
+    var y=window.pageYOffset,max=document.documentElement.scrollHeight-window.innerHeight;
+    header.classList.toggle('sc',y>40);
+    up.classList.toggle('show',y>700);
+    prog.style.transform='scaleX('+(max>0?Math.min(1,y/max):0).toFixed(4)+')';
+    parallax();checkReveal();
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;raf(onScroll)}},{passive:true});
+  window.addEventListener('resize',function(){if(!ticking){ticking=true;raf(onScroll)}});
+  window.addEventListener('load',function(){onScroll();setTimeout(onScroll,600)});
+  onScroll();
+  if(/[?&]static/.test(location.search)||location.hash==='#static'){root.classList.add('static');revs.forEach(function(e){e.classList.add('in')})}
+
+  
+  /* ---- лента фото: едет сама (transform, без scrollLeft), можно тянуть пальцем/мышью. 11.11: убраны рывки ---- */
+  (function(){
+    [['strip',.06],['eveStrip',.06]].forEach(function(cf){
+    var st=document.getElementById(cf[0]); if(!st) return;
+    var tr=st.firstElementChild, imgs=tr.children, n=imgs.length/2;
+    var period=0, pos=0, last=0, hold=0, down=false, x0=0, p0=0, moved=0, vis=true, run=false;
+    /* период = точное расстояние от 1-го фото до его копии (с учётом gap) — без скачка на стыке */
+    function measure(){ var p=imgs[n].offsetLeft-imgs[0].offsetLeft; if(p>0) period=p; }
+    function wrap(){ if(period>0){ pos%=period; if(pos<0) pos+=period; } }
+    function draw(){ tr.style.transform='translate3d('+(-pos).toFixed(2)+'px,0,0)'; }
+    function tick(t){ run=false; if(!vis) { last=0; return; }
+      if(!last) last=t; var dt=Math.min(50,t-last); last=t;
+      if(!down && t>hold && period){ pos+=dt*cf[1]; wrap(); draw(); }
+      run=true; raf(tick); }
+    function start(){ if(!run){ run=true; last=0; raf(tick); } }
+    measure(); start();
+    window.addEventListener('load',measure); window.addEventListener('resize',function(){measure();wrap();draw()});
+    [].forEach.call(imgs,function(im){ if(!im.complete) im.addEventListener('load',measure,{once:true}); });
+    /* вне экрана лента не крутится — телефону легче */
+    if('IntersectionObserver' in window) new IntersectionObserver(function(es){ vis=es[0].isIntersecting; if(vis) start(); }).observe(st);
+    st.addEventListener('pointerdown',function(e){ down=true; moved=0; x0=e.clientX; p0=pos; st.classList.add('drag'); });
+    window.addEventListener('pointermove',function(e){ if(!down) return; var d=e.clientX-x0; moved=Math.max(moved,Math.abs(d)); pos=p0-d; wrap(); draw(); });
+    function up(){ if(down){ down=false; st.classList.remove('drag'); hold=performance.now()+2000; } }
+    window.addEventListener('pointerup',up); window.addEventListener('pointercancel',up);
+    st.addEventListener('dragstart',function(e){e.preventDefault()});
+    });
+  })();
+
+  /* ---- вкладки меню ---- */
+  (function(){
+    var tabs=[].slice.call(document.querySelectorAll('#menu .tab'));
+    tabs.forEach(function(t){ t.addEventListener('click',function(){
+      tabs.forEach(function(x){ x.setAttribute('aria-selected', x===t?'true':'false'); document.getElementById(x.getAttribute('aria-controls')).hidden = x!==t; });
+      t.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});
+      var m=document.getElementById('menu'); if(m.getBoundingClientRect().top<0) window.scrollTo({top:window.scrollY+m.querySelector('.tabs').getBoundingClientRect().top-80,behavior:'smooth'});
+    }); });
+  })();
+
+  window.__ok=true;
+})();
+</script>
+<style>@media (max-width:899px){.js .rv.fl,.js .rv.fr-r{transform:translateY(40px)}.js .rv.fl.in,.js .rv.fr-r.in{transform:none}}</style>
+</body>
+</html>

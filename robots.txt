@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atlas-tula.ru/sitemap.xml

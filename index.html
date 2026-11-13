@@ -514,7 +514,7 @@ footer p+p{margin-top:6px;font-size:13px;opacity:.85}
       <div class="info rv fl">
         <dl>
           <div><dt>Адрес</dt><dd>Тула, Советская ул., 17</dd></div>
-          <div><dt>Часы работы</dt><dd>Вс–Чт 09:00–22:00<br>Пт–Сб 09:00–23:00</dd></div>
+          <div><dt>Часы работы</dt><dd id="hours">Вс–Чт 09:00–22:00<br>Пт–Сб 09:00–23:00</dd></div>
           <div><dt>Телефон</dt><dd><a href="tel:+79300998788">+7 930 099-87-88</a></dd></div>
         </dl>
       </div>
@@ -727,14 +727,46 @@ footer p+p{margin-top:6px;font-size:13px;opacity:.85}
     });
   })();
 
-  /* ---- вкладки меню ---- */
+  /* ---- вкладки меню (делегирование: вкладки могут пересобираться из таблицы) ---- */
   (function(){
-    var tabs=[].slice.call(document.querySelectorAll('#menu .tab'));
-    tabs.forEach(function(t){ t.addEventListener('click',function(){
-      tabs.forEach(function(x){ x.setAttribute('aria-selected', x===t?'true':'false'); document.getElementById(x.getAttribute('aria-controls')).hidden = x!==t; });
+    var box=document.querySelector('#menu .tabs'); if(!box) return;
+    box.addEventListener('click',function(e){
+      var t=e.target.closest('.tab'); if(!t) return;
+      [].slice.call(box.querySelectorAll('.tab')).forEach(function(x){ x.setAttribute('aria-selected', x===t?'true':'false'); var pn=document.getElementById(x.getAttribute('aria-controls')); if(pn) pn.hidden = x!==t; });
       t.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});
-      var m=document.getElementById('menu'); if(m.getBoundingClientRect().top<0) window.scrollTo({top:window.scrollY+m.querySelector('.tabs').getBoundingClientRect().top-80,behavior:'smooth'});
-    }); });
+      var m=document.getElementById('menu'); if(m.getBoundingClientRect().top<0) window.scrollTo({top:window.scrollY+box.getBoundingClientRect().top-80,behavior:'smooth'});
+    });
+  })();
+
+  /* ---- меню из Google-таблицы (клиент правит сам; если таблица недоступна — остаётся меню из страницы) ---- */
+  (function(){
+    var SHEET_ID='1abH8QVM0ly9OFoH-s4enlQC4Jrph6RWTJO7oBkondDc';
+    if(!SHEET_ID || SHEET_ID.indexOf('__')===0) return;
+    function parseCSV(t){var r=[],row=[],f='',q=false;for(var i=0;i<t.length;i++){var c=t[i];if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i++}else q=false}else f+=c}else if(c=='"')q=true;else if(c==','){row.push(f);f=''}else if(c=='\n'){row.push(f);r.push(row);row=[];f=''}else if(c!='\r')f+=c}if(f!==''||row.length){row.push(f);r.push(row)}return r}
+    function esc(x){return String(x).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+    function photo(u){u=(u||'').trim(); if(!u) return ''; var d=u.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([\w-]+)/); if(d) return 'https://drive.google.com/thumbnail?id='+d[1]+'&sz=w800'; return /^(https?:\/\/|images\/)/.test(u)?u:''}
+    function price(p){p=(p||'').trim(); if(!p) return ''; return /^\d[\d\s]*$/.test(p)?p.replace(/\s/g,'')+' ₽':p}
+    fetch('https://docs.google.com/spreadsheets/d/'+SHEET_ID+'/gviz/tq?tqx=out:csv&headers=1&t='+Date.now()).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(t){
+      var rows=parseCSV(t); if(rows.length<2) return; rows.shift();
+      var order=[],sec={},hrs=[];
+      rows.forEach(function(r){var s=(r[0]||'').trim(),n=(r[1]||'').trim(); if(!s||!n) return; if(s.toLowerCase()==='часы работы'){hrs.push(esc(n)+' '+esc((r[2]||'').trim()));return} if(!sec[s]){sec[s]=[];order.push(s)} sec[s].push(r)});
+      var hd=document.getElementById('hours'); if(hd&&hrs.length) hd.innerHTML=hrs.join('<br>');
+      if(!order.length) return;
+      var box=document.querySelector('#menu .tabs'); if(!box) return;
+      var keep=['Винная карта','КБЖУ'], firstKeep=null;
+      [].slice.call(box.querySelectorAll('.tab')).forEach(function(tb){var nm=tb.textContent.trim(),pn=document.getElementById(tb.getAttribute('aria-controls')); if(keep.indexOf(nm)>=0){if(!firstKeep)firstKeep=tb; return} if(pn)pn.remove(); tb.remove()});
+      var anchor=firstKeep?document.getElementById(firstKeep.getAttribute('aria-controls')):null, holder=box.parentNode;
+      order.forEach(function(s,i){
+        var id='ms'+i, tb=document.createElement('button'); tb.className='tab'; tb.setAttribute('role','tab'); tb.id=id+'-t'; tb.setAttribute('aria-controls',id); tb.textContent=s;
+        box.insertBefore(tb,firstKeep);
+        var html=sec[s].map(function(r){var im=photo(r[4]),pr=price(r[2]),d=(r[3]||'').trim();
+          return '<article class="mi">'+(im?'<img src="'+esc(im)+'" width="675" height="900" alt="'+esc(r[1])+'" loading="lazy">':'')+'<div class="mi-t"><span>'+esc(r[1].trim())+'</span>'+(pr?'<b>'+esc(pr)+'</b>':'')+'</div>'+(d?'<p class="mi-d">'+esc(d)+'</p>':'')+'</article>'}).join('');
+        var pn=document.createElement('div'); pn.className='mpane panel'; pn.setAttribute('role','tabpanel'); pn.id=id; pn.setAttribute('aria-labelledby',id+'-t'); pn.innerHTML='<div class="mgrid">'+html+'</div>';
+        holder.insertBefore(pn,anchor);
+      });
+      var all=[].slice.call(box.querySelectorAll('.tab'));
+      all.forEach(function(x,i){x.setAttribute('aria-selected',i===0?'true':'false'); var pn=document.getElementById(x.getAttribute('aria-controls')); if(pn) pn.hidden=i!==0});
+    }).catch(function(){});
   })();
 
   window.__ok=true;
